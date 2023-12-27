@@ -1,0 +1,39 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Palanquin:wght@100;200;300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Palanquin:wght@100;200;300;400;500;600;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+/* ::-webkit-scrollbar {
+  display: none;
+} */
+.active {
+  color: rgba(109, 109, 109, 1);
+}
+
+.min-height {
+  min-height: calc(100vh - 120px);
+}
+
+/* if needed border-[1px] border-red-500 */
+@layer components {
+  .container {
+    @apply max-w-[1400px] xl:mx-auto mx-0 md:px-3 lg:mx-4 my-[10px];
+  }
+}
+
+@layer utilities {
+  .padding {
+    @apply sm:px-16 px-8 sm:py-24 py-12;
+  }
+
+}
+
