@@ -1,7 +1,6 @@
 # React js e-commerce store
 
-# react hooks
-
+react hooks
 useState,
 useEffect,
 useContext,
